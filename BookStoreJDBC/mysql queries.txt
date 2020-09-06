@@ -1,0 +1,25 @@
+open mysql workbench -> go to connection dipal -> write and execute sql commands
+mysql server username="root" password="root"
+
+create database books;
+
+use books;
+
+create table BooksRecords(
+		
+	bookId INT NOT NULL,
+        
+	bookName VARCHAR(50) NOT NULL,
+        
+	author VARCHAR(50),
+        
+	price INT,
+        
+	genre VARCHAR(20),
+        
+	available int,
+        
+	publication VARCHAR(40),
+        
+	PRIMARY KEY (bookId))
+        
